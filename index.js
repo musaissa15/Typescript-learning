@@ -3,8 +3,14 @@ function humanYearsCatYearsDogYears(humanYears) {
     // Your code here!
     let result = [];
     console.log(result);
+    for (let i = 0; i < humanYears; i++) {
+        if (humanYears[i] === 1) {
+            console.log('hello');
+        }
+    }
     return [0, 0, 0];
 }
+humanYearsCatYearsDogYears(1);
 /**
  * !Kata Task
 *TODOS I have a cat and a dog.
