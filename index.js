@@ -1,16 +1,23 @@
 "use strict";
 function humanYearsCatYearsDogYears(humanYears) {
     // Your code here!
-    let result = [];
-    console.log(result);
-    for (let i = 0; i < humanYears; i++) {
-        if (humanYears[i] === 1) {
-            console.log('hello');
-        }
+    let dogYears = 0;
+    let catYears = 0;
+    if (humanYears === 1) {
+        dogYears += 15;
+        catYears += 15;
     }
-    return [0, 0, 0];
+    else if (humanYears === 2) {
+        dogYears += 24;
+        catYears += 24;
+    }
+    else if (humanYears >= 3) {
+        dogYears += (humanYears - 2) * 4 + 24;
+        catYears += (humanYears - 2) * 5 + 24;
+    }
+    return [humanYears, dogYears, catYears];
 }
-humanYearsCatYearsDogYears(1);
+humanYearsCatYearsDogYears(10);
 /**
  * !Kata Task
 *TODOS I have a cat and a dog.
@@ -32,4 +39,4 @@ humanYearsCatYearsDogYears(1);
 *TODOS +9 dog years for second year
 *TODOS +5 dog years for each year after that
  *
-*/ 
+*/

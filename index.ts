@@ -1,25 +1,29 @@
- function humanYearsCatYearsDogYears(
-		humanYears: number
- ): [number, number, number] {
-		// Your code here!
-		let result: [number, number, number] = [];
-		result.push(humanYears);
+function humanYearsCatYearsDogYears(
+	humanYears: number
+): [number, number, number] {
+	// Your code here!
+	let dogYears: number = 0
+	let catYears: number = 0
+	
+	
 
-		if (humanYears === 1) {
-			result.push(15);
-			result.push(15);
-		} else if (humanYears === 2) {
-			result.push(24);
-			result.push(24);
-		} else if (humanYears >= 3) {
-			result.push((humanYears - 2) * 4 + 24);
-			result.push((humanYears - 2) * 5 + 24);
-		}
 
-		console.log(result);
-		return [...result];
- }
-humanYearsCatYearsDogYears(100)
+	if (humanYears === 1) {
+		dogYears += 15;
+		catYears += 15
+	} else if (humanYears === 2) {
+		dogYears += 24;
+		catYears += 24;
+	} else if (humanYears >= 3) {
+	dogYears += (humanYears - 2) * 4 + 24 
+	catYears += (humanYears - 2) * 5 + 24 
+
+}
+
+	return [humanYears, dogYears, catYears];
+	
+}
+humanYearsCatYearsDogYears(10);
 /** 
  * !Kata Task
 *TODOS I have a cat and a dog.
